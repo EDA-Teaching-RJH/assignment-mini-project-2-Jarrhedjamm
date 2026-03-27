@@ -9,7 +9,8 @@ while True:
     print("3.remove staff")
     print("4.payroll")
     print("5.search staff")
-    print("6.exit")
+    print("6.increase wage")
+    print("7.exit")
 
     opt = input ("\nselect your option: ")
     
@@ -56,6 +57,19 @@ while True:
             print("error: '" + search_name + "' is not in the system.")
 
     elif opt == "6":
+        target_name = input ("enter the name ofa staff member for a wage increase")
+
+        if target_name in name:
+            idx = name.index(target_name)
+            print("current wage for " + target_name + " is £" + str(wage[idx]))
+
+            new_pay = float(input("enter the new hourly wage: £"))
+            wage[idx] = new_pay
+            print("you have now change the pay of " + target_name + " to £" + str(wage[idx]) + "per hour")
+        else:
+            print("error staff member not found")
+
+    elif opt == "7":
         print("exiting...")#it does what it says.. it exits
         break
 
