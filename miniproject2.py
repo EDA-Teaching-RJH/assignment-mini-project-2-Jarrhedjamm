@@ -27,4 +27,15 @@ while true:
         wage.append(new_wage)
         print("added " + new_name + " to the system.")
 
-   
+    elif opt == "3":
+        rem = input("Enter name to remove: ")
+        if rem in name:
+            idx = name.index(rem)
+            name.pop(idx)
+            role.pop(idx)
+            wage.pop(idx)
+            print("removed " + rem + " from the system. ")
+        else:
+            print("staff member not found.")
+
+    
