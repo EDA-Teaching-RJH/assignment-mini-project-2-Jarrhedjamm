@@ -74,4 +74,4 @@ while True:
         break
 
     else:
-        print("invalid option. choose from options 1, 2, 3, 4, 5, 6")
+        print("invalid option. choose from options 1, 2, 3, 4, 5, 6, 7")
