@@ -38,4 +38,8 @@ while true:
         else:
             print("staff member not found.")
 
+    elif opt == "4":
+        total = sum(wage)
+        print("The total cost per hour for all staff is: £" + str(total))
+
     
