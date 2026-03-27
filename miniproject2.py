@@ -46,4 +46,5 @@ while true:
         print("exiting")
         break
 
-   
+    else:
+        print("invalid option. choose from options 1, 2, 3, 4, 5")
