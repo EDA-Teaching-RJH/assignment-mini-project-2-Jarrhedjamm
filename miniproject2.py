@@ -17,4 +17,14 @@ while true:
         for i in range(len(names)):
             print(str(i+1) + ". " + name[i] + " - " + role[i] + " (£"+ str(wage[i]) + "/hr)")
 
-    
+    elif opt == "2":
+        new_name = input("staff name: ")
+        new_role = input("staff role: ")
+        new_wage = float(input("hourly wage: "))
+
+        name.append(new_name)
+        role.append(new_role)
+        wage.append(new_wage)
+        print("added " + new_name + " to the system.")
+
+   
