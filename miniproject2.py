@@ -57,7 +57,7 @@ while True:
             print("error: '" + search_name + "' is not in the system.")
 
     elif opt == "6":
-        target_name = input ("enter the name ofa staff member for a wage increase")
+        target_name = input ("enter the name of a staff member for a wage increase: ")
 
         if target_name in name:
             idx = name.index(target_name)
