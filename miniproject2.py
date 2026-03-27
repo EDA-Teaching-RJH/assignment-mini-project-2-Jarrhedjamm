@@ -1,6 +1,6 @@
 name = ["sett", "Heimerdinger", "sion", "ornn"]
-roles = ["manager", "kitchen", "server", "bar", "washer"]
-wages = ["25.50", "20.50", "13.50", "18.50", "11.50"]
+role = ["manager", "kitchen", "server", "bar", "washer"]
+wage = ["25.50", "20.50", "13.50", "18.50", "11.50"]
 
 while true:
     print("\n---Restaurant management---")
@@ -11,3 +11,10 @@ while true:
     print("5.exit")
 
     opt = input ("\nselect your option: ")
+    
+    if opt == "1":
+        print("\n---staff list---")
+        for i in range(len(names)):
+            print(str(i+1) + ". " + name[i] + " - " + role[i] + " (£"+ str(wage[i]) + "/hr)")
+
+    
