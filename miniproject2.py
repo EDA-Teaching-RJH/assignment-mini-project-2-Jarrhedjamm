@@ -42,4 +42,8 @@ while true:
         total = sum(wage)
         print("The total cost per hour for all staff is: £" + str(total))
 
-    
+    elif opt == "5":
+        print("exiting")
+        break
+
+   
